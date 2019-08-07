@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="coreDataDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JkT-56-Lda">
+                                <rect key="frame" x="138" y="91" width="44" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FvK-bY-qo4"/>
+                                </constraints>
+                                <state key="normal" title="create"/>
+                                <connections>
+                                    <action selector="createData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wOE-85-gO0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJS-Fd-sg1">
+                                <rect key="frame" x="145" y="181" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LEb-Fm-cBA"/>
+                                </constraints>
+                                <state key="normal" title="get"/>
+                                <connections>
+                                    <action selector="retrieveData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f4m-AR-7s0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cb-Yw-tgy">
+                                <rect key="frame" x="136" y="276" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gEM-kW-drQ"/>
+                                </constraints>
+                                <state key="normal" title="update"/>
+                                <connections>
+                                    <action selector="updateData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pgh-jI-XSD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRQ-mD-5bJ">
+                                <rect key="frame" x="137.5" y="374" width="45" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xUy-87-q4C"/>
+                                </constraints>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CFQ-8g-2J3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sRQ-mD-5bJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0yg-zB-0hm"/>
+                            <constraint firstItem="JkT-56-Lda" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3i8-4S-n7m"/>
+                            <constraint firstItem="JkT-56-Lda" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="Oud-8v-td6"/>
+                            <constraint firstItem="ZJS-Fd-sg1" firstAttribute="top" secondItem="JkT-56-Lda" secondAttribute="bottom" constant="60" id="WEi-Xl-KMd"/>
+                            <constraint firstItem="sRQ-mD-5bJ" firstAttribute="top" secondItem="8cb-Yw-tgy" secondAttribute="bottom" constant="68" id="XDk-dU-pD4"/>
+                            <constraint firstItem="8cb-Yw-tgy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aAa-PH-ctg"/>
+                            <constraint firstItem="8cb-Yw-tgy" firstAttribute="top" secondItem="ZJS-Fd-sg1" secondAttribute="bottom" constant="65" id="aoG-ku-tlW"/>
+                            <constraint firstItem="ZJS-Fd-sg1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="exN-8x-dag"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
